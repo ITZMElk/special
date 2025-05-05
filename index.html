@@ -403,21 +403,26 @@
     
     <div class="container">
         <div id="sorry" class="tab-content active">
-             
-Main jaanta hoon, maine tumhe hurt kiya...
-Par yakeen mano, har ek pal tumhari yaadon mein tha.
-Kabhi jaan bujh ke kuch nahi kiya, par galti ho gayi...
-Tum meri zindagi ki woh dost ho, jiska jagah koi le hi nahi sakta.
-
-Agar meri ek muskurahat se tumhara din ban sakta hai,
-Toh socho meri ek maafi se tumhara gussa chala jaaye...
-
-Maaf kar do na yaar,
-Tumhari hasi ke bina sab kuch suna suna lagta hai.        </div>  
-          
+            <h1></h1>
+            
+            <p>Tumhare bina yeh dil adhoora hai,<br>
+            Maaf karna agar maine tumhe dukhi kiya hai...</p>
+            
+            <p>Hamesha tumhara saath nibhaane ka waada karta hoon,<br>
+            Bas meri yeh <span class="gold-text">masoom si galti</span> maaf kar do.</p>
+            
+            <p>Tumhari muskaan meri duniya hai,<br>
+            Tumhara gussa meri haar hai...</p>
+            
+            <p>Waada karta hoon ab kabhi nahi dukhaunga tumhe,<br>
+            Bas <span class="highlight">ek baar phir se muskara do</span>.</p>
+            
+            <p>Tumhara bhai,<br>
+            Jo tumhe duniya se bhi zyada chahta hai...</p>
+        </div>
         
         <div id="thankyou" class="tab-content">
-            
+            <h1>Shukriya🌸</h1>
             
             <p>Tumhare pyaar ke liye, tumhare sapno ke liye,<br>
             Tumhari har chhoti si muskaan ke liye...</p>
@@ -426,17 +431,17 @@ Tumhari hasi ke bina sab kuch suna suna lagta hai.        </div>
             Tumhare bina yeh dil bechain ho jaata hai...</p>
             
             <p>Hamesha yaad rakhna, chahe kitni bhi door chale jao,<br>
+             tumhare liye hamesha yahi rahega...</p>
             
-            
-            
-            <span class="gold-text">Ek baar phir se shukriya</span>  ❤️</p>
+            <p>Tumhare pyaar aur sahansheelta ke liye,<br>
+            <span class="gold-text">Ek baar phir se shukriya</span> someone speacial ❤</p>
         </div>
     </div>
     
     <div class="heart-animation" id="heartAnimation"></div>
     
     <!-- Floating 3D hearts and roses -->
-    <div class="floating" style="top: 10%; left: 5%; font-size: 40px; color: red; transform: rotateX(20deg);">❤️</div>
+    <div class="floating" style="top: 10%; left: 5%; font-size: 40px; color: red; transform: rotateX(20deg);">❤</div>
     <div class="floating" style="top: 20%; right: 8%; font-size: 40px; color: #ff69b4; transform: rotateX(20deg);">🌹</div>
     <div class="floating" style="top: 30%; left: 15%; font-size: 35px; color: gold; transform: rotateX(20deg);">✨</div>
     <div class="floating" style="bottom: 15%; right: 10%; font-size: 30px; color: #ff1493; transform: rotateX(20deg);">💖</div>
@@ -478,7 +483,7 @@ Tumhari hasi ke bina sab kuch suna suna lagta hai.        </div>
             
             // Create hearts and roses
             setInterval(() => {
-                createFloatingElement('❤️', 'heart');
+                createFloatingElement('❤', 'heart');
                 createFloatingElement('🌹', 'rose');
                 createFloatingElement('💖', 'heart');
                 createFloatingElement('🌷', 'rose');
@@ -494,12 +499,12 @@ Tumhari hasi ke bina sab kuch suna suna lagta hai.        </div>
             
             // Random position at bottom
             const startPos = Math.random() * 100;
-            element.style.left = `${startPos}%`;
+            element.style.left = ${startPos}%;
             element.style.bottom = '-50px';
             
             // Random size
             const size = 20 + Math.random() * 30;
-            element.style.fontSize = `${size}px`;
+            element.style.fontSize = ${size}px;
             
             // Random color for some variety
             if (type === 'heart') {
@@ -543,7 +548,7 @@ Tumhari hasi ke bina sab kuch suna suna lagta hai.        </div>
             
             // Create more hearts and roses
             setInterval(() => {
-                createFloatingElement('❤️', 'heart');
+                createFloatingElement('❤', 'heart');
                 createFloatingElement('🌹', 'rose');
             }, 100);
         });
